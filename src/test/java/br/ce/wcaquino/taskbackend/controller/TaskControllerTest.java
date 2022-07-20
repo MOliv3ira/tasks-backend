@@ -54,6 +54,7 @@ public class TaskControllerTest {
         Task todo = new Task();
         todo.setTask("Descricao");
         todo.setDueDate(LocalDate.of(2010, 01, 01));
+
         try {
             controller.save(todo);
             Assert.fail("Não deveria chegar nesse ponto!");
